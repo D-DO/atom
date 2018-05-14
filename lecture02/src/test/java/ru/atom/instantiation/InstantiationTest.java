@@ -22,4 +22,8 @@ public class InstantiationTest {
     public void testBaseClassInstantiation() throws Exception {
         Base base = new Base();
     }
+    @Test
+    public void testSub() throws Exception{
+        Sub sub1 = new Sub();
+    }
 }
