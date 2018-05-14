@@ -64,62 +64,7 @@ public class Bar implements Collider {
 
         } else if (other instanceof Bar) {
             Bar bar = (Bar) other;
-
-//            if ((firstCornerPoint.getX() <= secondCornerPoint.getX()) && (firstCornerPoint.getY() <= secondCornerPoint.getY())) {
-//
-//
-//                if ((((firstCornerPoint.getX() <= bar.firstCornerPoint.getX()) && (firstCornerPoint.getY() <= bar.firstCornerPoint.getY()))
-//                        && ((secondCornerPoint.getX() >= bar.firstCornerPoint.getX()) && (secondCornerPoint.getY() >= bar.firstCornerPoint.getY())))
-//                        || (((firstCornerPoint.getX() <= bar.secondCornerPoint.getX()) && (firstCornerPoint.getY() <= bar.secondCornerPoint.getY()))
-//                        && ((secondCornerPoint.getX() >= bar.secondCornerPoint.getX()) && (secondCornerPoint.getY() >= bar.secondCornerPoint.getY())))) {
-//                    return true;
-//                } else {
-//                    return false;
-//                }
-//            }
-//
-//            if ((firstCornerPoint.getX() >= secondCornerPoint.getX()) && (firstCornerPoint.getY() >= secondCornerPoint.getY())) {
-//
-//                if ((((secondCornerPoint.getX() <= bar.firstCornerPoint.getX()) && (secondCornerPoint.getY() <= bar.firstCornerPoint.getY()))
-//                        && ((firstCornerPoint.getX() >= bar.firstCornerPoint.getX()) && (firstCornerPoint.getY() >= bar.firstCornerPoint.getY())))
-//                        || (((secondCornerPoint.getX() <= bar.secondCornerPoint.getX()) && (secondCornerPoint.getY() <= bar.secondCornerPoint.getY()))
-//                        && ((firstCornerPoint.getX() >= bar.secondCornerPoint.getX()) && (firstCornerPoint.getY() >= bar.secondCornerPoint.getY())))) {
-//                    return true;
-//                } else {
-//                    return false;
-//                }
-//            }
-//
-//            if ((firstCornerPoint.getX() <= secondCornerPoint.getX()) && (firstCornerPoint.getY() >= secondCornerPoint.getY())) {
-//
-//
-//                if ((((firstCornerPoint.getX() <= bar.firstCornerPoint.getX()) && (firstCornerPoint.getY() >= bar.firstCornerPoint.getY()))
-//                        && ((secondCornerPoint.getX() >= bar.firstCornerPoint.getX()) && (secondCornerPoint.getY() <= bar.firstCornerPoint.getY())))
-//                        || (((firstCornerPoint.getX() <= bar.secondCornerPoint.getX()) && (firstCornerPoint.getY() >= bar.secondCornerPoint.getY()))
-//                        && ((secondCornerPoint.getX() >= bar.secondCornerPoint.getX()) && (secondCornerPoint.getY() <= bar.secondCornerPoint.getY())))) {
-//                    return true;
-//                } else {
-//                    return false;
-//                }
-//            }
-//
-//            if ((firstCornerPoint.getX() >= secondCornerPoint.getX()) && (firstCornerPoint.getY() <= secondCornerPoint.getY())) {
-//
-//
-//                if ((((firstCornerPoint.getX() >= bar.firstCornerPoint.getX()) && (firstCornerPoint.getY() <= bar.firstCornerPoint.getY()))
-//                        && ((secondCornerPoint.getX() <= bar.firstCornerPoint.getX()) && (secondCornerPoint.getY() >= bar.firstCornerPoint.getY())))
-//                        || (((firstCornerPoint.getX() >= bar.secondCornerPoint.getX()) && (firstCornerPoint.getY() <= bar.secondCornerPoint.getY()))
-//                        && ((secondCornerPoint.getX() <= bar.secondCornerPoint.getX()) && (secondCornerPoint.getY() >= bar.secondCornerPoint.getY())))) {
-//                    return true;
-//                } else {
-//                    return false;
-//                }
-//            }
-//
-//            return false;
-//
-//        } else {
-//            return false;
+            
 
             return (bar.getFirstCornerPoint().getX() <= getSecondCornerPoint().getX()
                     && bar.getSecondCornerPoint().getX() >= getFirstCornerPoint().getX())
